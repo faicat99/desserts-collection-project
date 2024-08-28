@@ -22,12 +22,50 @@
   <title>About me </title>
 </head>
 <body>
-    <div class="section-container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Fainche Mckeown</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./about.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Recipes
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Baklava Recipe</a></li>
+                  <li><a class="dropdown-item" href="#">Pavlova</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search for Recipes" aria-label="Search">
+              <a href="" class="btn-branding" type="submit">Search</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+  
+
+    <div class="section-container container">
         <div class="content">
             <h1 class="text-center mb-5">About Me</h1>
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="images/italy.jpg" class="img-responsive rounded"  alt="Fainche Mckeown" />
+                        <img src="images/italy.jpg" class="img-responsive rounded" width="500" height="500" alt="Fainche Mckeown" />
                     </div>
                         <div class="col-lg-6">
                             <h2 class="mt-5 mb-4">Hi, I am Fainche Mckeown</h2>
@@ -36,7 +74,7 @@
                             <p>I have also spent time in Istanbul. As I have a sweet tooth...</p>
                             <p> I try to taste all the sweet things countries have to offer, Baklava in Istanbul...</p>
                             <p>I want to try Mooncake in China! I have a very sweet tooth!</p>
-                            <p class="mb-5"> I have compiled various treats I have tried throughout my travels and some that I want to try!</p>
+                            <p class="mb-4"> I have compiled various treats I have tried throughout my travels and some that I want to try!</p>
                             <a href="#" class="btn-branding-outline">Sweet Treats</a>
                         </div>
                     </div>
