@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color);
 }
 
-.section-content {
+.section-container {
     padding: 100px;
 }
 
@@ -90,11 +90,18 @@ h1, h2, h3, h4, h5, h6 {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 60px;
 }
 
+.content h1 {
+    font-size: 75px;
+    line-height: 1.5;
+    color: var(--branding-color);
+}
 
-
+.content p {
+    line-height: 1.5;
+}
 
 
 
@@ -127,5 +134,21 @@ h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 30px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 44px;
+    }
+
+    .content h2, h4 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 16px;
     }
 }
