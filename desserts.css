@@ -6,7 +6,7 @@
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -82,8 +82,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 100px;
 }
 
-.section-content img {
-    max-width: 85%;
+.img-responsive {
+    width: 100%;
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
 }
 
 
@@ -91,9 +98,34 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+@media (max-width:900px) {
+    .hero {
+        padding: 10px;
+    }
+    .hero h1 {
+        font-size: 44px;
+    }
 
+    .hero h2 {
+        font-size: 35px;
+    }
 
+    .hero, .section-content a {
+        font-size: 12px;
+    }
 
+    .section-content {
+        padding: 50px;
+    }
 
+    .img-responsive {
+            width: 85%;
+            display: block;
+    }
 
-
+    .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    }
+}
